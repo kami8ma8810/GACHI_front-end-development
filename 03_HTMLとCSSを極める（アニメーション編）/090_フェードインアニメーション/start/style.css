@@ -1,75 +1,96 @@
 .appear.up .item {
-  -webkit-transition: all .8s;
-  -o-transition: all .8s;
-  transition: all .8s;
-  opacity: 0;
   -webkit-transform: translateY(8px);
       -ms-transform: translateY(8px);
           transform: translateY(8px);
 }
 
-.appear.up.inview .item {
+.appear.right .item {
+  -webkit-transform: translateX(-8px);
+      -ms-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+
+.appear.down .item {
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.appear.left .item {
+  -webkit-transform: translateX(8px);
+      -ms-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+.appear .item {
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+  opacity: 0;
+}
+
+.appear.inview .item {
   opacity: 1;
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
 }
 
-.appear.up.inview .item:nth-child(1) {
+.appear.inview .item:nth-child(1) {
   -webkit-transition-delay: 0.2s;
        -o-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-.appear.up.inview .item:nth-child(2) {
+.appear.inview .item:nth-child(2) {
   -webkit-transition-delay: 0.4s;
        -o-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.appear.up.inview .item:nth-child(3) {
+.appear.inview .item:nth-child(3) {
   -webkit-transition-delay: 0.6s;
        -o-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-.appear.up.inview .item:nth-child(4) {
+.appear.inview .item:nth-child(4) {
   -webkit-transition-delay: 0.8s;
        -o-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-.appear.up.inview .item:nth-child(5) {
+.appear.inview .item:nth-child(5) {
   -webkit-transition-delay: 1s;
        -o-transition-delay: 1s;
           transition-delay: 1s;
 }
 
-.appear.up.inview .item:nth-child(6) {
+.appear.inview .item:nth-child(6) {
   -webkit-transition-delay: 1.2s;
        -o-transition-delay: 1.2s;
           transition-delay: 1.2s;
 }
 
-.appear.up.inview .item:nth-child(7) {
+.appear.inview .item:nth-child(7) {
   -webkit-transition-delay: 1.4s;
        -o-transition-delay: 1.4s;
           transition-delay: 1.4s;
 }
 
-.appear.up.inview .item:nth-child(8) {
+.appear.inview .item:nth-child(8) {
   -webkit-transition-delay: 1.6s;
        -o-transition-delay: 1.6s;
           transition-delay: 1.6s;
 }
 
-.appear.up.inview .item:nth-child(9) {
+.appear.inview .item:nth-child(9) {
   -webkit-transition-delay: 1.8s;
        -o-transition-delay: 1.8s;
           transition-delay: 1.8s;
 }
 
-.appear.up.inview .item:nth-child(10) {
+.appear.inview .item:nth-child(10) {
   -webkit-transition-delay: 2s;
        -o-transition-delay: 2s;
           transition-delay: 2s;

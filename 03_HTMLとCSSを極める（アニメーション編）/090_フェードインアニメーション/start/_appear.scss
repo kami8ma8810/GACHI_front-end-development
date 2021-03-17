@@ -1,8 +1,23 @@
-.appear.up {
+$pattern:("up":translateY(8px),
+	"right":translateX(-8px),
+	"down":translateY(-8px),
+	"left":translateX(8px),
+);
+
+@each $key,
+$value in $pattern {
+	.appear.#{$key} {
+		& .item {
+			transform: $value;
+		}
+	}
+}
+
+
+.appear {
 	& .item {
 		transition: all .8s;
 		opacity: 0;
-		transform: translateY(8px);
 	}
 
 	&.inview {
