@@ -1,0 +1,21 @@
+.appear.up {
+	& .item {
+		transition: all .8s;
+		opacity: 0;
+		transform: translateY(8px);
+	}
+
+	&.inview {
+
+		& .item {
+			opacity: 1;
+			transform: translateY(0);
+
+			@for $i from 1 through 10 {
+				&:nth-child(#{$i}) {
+					transition-delay: $i * 0.2s;
+				}
+			}
+		}
+	}
+}
