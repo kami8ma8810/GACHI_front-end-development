@@ -44,4 +44,7 @@ class ScrollObserver {
 		this.io = new IntersectionObserver(callback.bind(this), this.options);
 		this.els.forEach(el => this.io.observe(el));
 	}
+	destory() {
+		this.io.disconnect();
+	}
 }
